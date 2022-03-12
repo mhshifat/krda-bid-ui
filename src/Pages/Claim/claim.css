@@ -1,0 +1,40 @@
+.claim-amount{
+    background: linear-gradient(90.3deg, rgba(243, 243, 243, 0.21) 0%, rgba(243, 243, 243, 0.07) 100%);
+    box-shadow: 0.845788px 0.845788px 0.845788px rgba(243, 243, 243, 0.4);
+    backdrop-filter: blur(42.2894px);
+    border-radius: 8.45788px;
+    transform: rotate(0.12deg);
+}
+
+.border-claim{
+  border: 2px solid #D8750D;
+  border-radius: 50%;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  color:#fff
+}
+
+.border-claim:hover{
+  border: 2px solid #D8750D;
+  background:linear-gradient(180deg, #FDBC19 0%, #D8750D 100%);
+  color:#000;  
+}
+
+.amount{
+  font-style: normal;
+  font-weight: bold;
+  border: 2px solid transparent;
+  border-image: linear-gradient(180deg, #FFFFFF 0%, #FDBC19 100%);
+  border-image-slice: 1;
+  border-radius: 4px;  
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.number{
+  font-style: normal;
+  font-weight: bold;
+  background: linear-gradient(180deg, #BCFE4F 0%, #1AB900 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

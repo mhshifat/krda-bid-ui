@@ -1,0 +1,47 @@
+.banner{
+  padding: 32px;
+  background: linear-gradient(90.3deg, rgba(243, 243, 243, 0.21) 0%, rgba(243, 243, 243, 0.07) 97.92%);
+  box-shadow: 2px 2px 8px rgba(243, 243, 243, 0.5);
+  backdrop-filter: blur(100px);
+  border-radius: 8px;
+}
+.banner .text-bidder-number{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  color: #F3F3F3;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 4px 0px;
+}
+.banner .text-bidder-title{
+
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 30px;
+color: #B5BCCC;
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 4px 0px;
+}
+.banner .Rs-text-bidder-number{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  background-image: linear-gradient(180deg, #BCFE4F 0%, #1AB900 100%) !important;
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  margin: 4px 0px;
+}

@@ -1,0 +1,17 @@
+.white-menu-border{
+    border: 2px solid #ffffff;
+    border-color: linear-gradient(180deg, #FDBC19 0%, hsl(31, 52%, 38%) 100%);
+    border-image: linear-gradient(180deg, #FDBC19 0%, #d88124 100%);
+}
+
+
+
+.transparent-menu-button .all-menu-item:hover{
+  background-color: black;
+}
+
+@media screen and (min-width: 480px) {
+  .white-menu-border {
+    font-size: 30px !important;
+  }
+}

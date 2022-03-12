@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: api-cm
+    namespace: alpha
+data:
+  web.properties: |
+    window.__RUNTIME_CONFIG__ = {
+    API_URL: "https://alpha-api.krida.fans",
+    GRAPHQL_URL: "https://alpha-gql.krida.fans" }
+    

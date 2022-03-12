@@ -1,0 +1,16 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: dev
+
+patchesStrategicMerge:
+- deployment-patch.yaml
+
+resources:
+- ../../base
+- cm-api-dev.yaml
+- ingress.yaml
+
+images:
+- name: 282966166539.dkr.ecr.ap-southeast-1.amazonaws.com/krida-bid-ui
+  newTag: responsiveness-of-buttons-and-player-770c89f3-1646385224

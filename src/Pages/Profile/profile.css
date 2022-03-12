@@ -1,0 +1,19 @@
+.bg-profile-gradient {
+  background: linear-gradient(90.3deg, rgba(71, 71, 71, 0.63) 0%, rgba(71, 71, 71, 0.35) 100%);
+}
+.text-underline-profile-gradient::before {
+  background: linear-gradient(180deg, #FDBC19 0%, #D8750D 100%);;
+} 
+
+.gradient-text {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FDBC19 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.select-bg-gradient {
+  background: linear-gradient(180deg, #FDBC19 0%, #D8750D 100%);
+  box-shadow: 0px 1px 50px rgba(253, 188, 25, 0.4);
+}

@@ -1,0 +1,16 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: krida-bid-ui-ingress
+  namespace: dev
+spec:
+  entryPoints:
+    - web
+  routes:
+    - kind: Rule
+      match: Host(`dev-bid.krida.fans`)
+      services:
+        - kind: Service
+          name: krida-bid-ui
+          namespace: dev
+          port: 80

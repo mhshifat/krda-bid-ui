@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: krida-bid-ui
+spec:
+  selector:
+    app: krida-bid-ui
+  ports:
+    - port: 80
+      targetPort: api-port
+      name: http
+  type: ClusterIP

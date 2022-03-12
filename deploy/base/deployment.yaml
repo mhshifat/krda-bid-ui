@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: krida-bid-ui
+  labels:
+    app: krida-bid-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: krida-bid-ui
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: krida-bid-ui
+    spec:
+      containers:
+        - image: 282966166539.dkr.ecr.ap-southeast-1.amazonaws.com/krida-bid-ui:latest
+          name: krida-bid-ui
+          ports:
+            - name: api-port
+              containerPort: 80
+          imagePullPolicy: Always

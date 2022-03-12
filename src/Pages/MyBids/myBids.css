@@ -1,0 +1,54 @@
+.allPlayers-input::placeholder{
+    color: rgba(243, 243, 243, 0.6);
+    background: transparent;
+    font-weight: bold;
+}
+
+.allPlayers-input:focus{
+    border:1px solid black;
+    box-sizing: border-box;
+}
+
+.allPlayers-input{
+    border:1px solid black;
+}
+
+.allPlayers-input{
+        background: transparent;
+
+}
+:focus-visible {
+    outline: transparent auto 0px;
+}
+
+.slider-wrapper{
+    position: relative;
+  width:100%;
+  height: auto;
+  padding: 50px 0 100px;
+}
+
+.bid-section .amount-input::placeholder{
+    color: rgba(255, 255, 255, 1) !important;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+.bid-section .amount-input::placeholder{
+    color: rgba(243, 243, 243, 1);
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.bid-section .amount-input{
+    background-color: transparent;
+    border: 2px solid #d88124;
+    border-radius: 4px;
+}
+.bid-section .amount-input:focus{
+    border: 2px solid #d88124;
+}

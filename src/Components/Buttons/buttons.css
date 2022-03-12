@@ -1,0 +1,15 @@
+.navbar-button {
+    background: linear-gradient(180deg, #FDBC19 0%, #D8750D 100%);
+    box-shadow: 0px 1px 50px rgba(253, 188, 25, 0.4);
+    color: #191919;
+    font-weight: bold;
+}
+
+.top-player-select-button{
+  color:#191919;
+  font-weight: bold;
+  flex-direction: row;
+  background: linear-gradient(180deg, #FDBC19 0%, #D8750D 100%);
+  box-shadow: 0px 1px 30px rgba(253, 188, 25, 0.4);
+
+}

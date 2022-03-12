@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: krida-bid-ui
+spec:
+  template:
+    spec:
+      containers:
+      - name: krida-bid-ui
+        volumeMounts:          #override config.js file
+        - name: config
+          mountPath: "/usr/share/nginx/html/config.js"
+          subPath: "config.js"
+      volumes:
+      - name: config
+        configMap:
+          name: api-cm
+          items:
+          - key: "web.properties"
+            path: "config.js"

@@ -1,0 +1,14 @@
+.mobile-nav{
+    z-index: 400;
+}
+
+select {
+    text-align: center;
+    text-align-last: center;
+    -moz-text-align-last: center;
+}
+
+.mobile-menu-link:hover{
+      background: linear-gradient(180deg, #FDBC19 0%, #D8750D 100%);
+
+}
