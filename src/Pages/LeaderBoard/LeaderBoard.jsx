@@ -13,7 +13,7 @@ const LeaderBoard = () => {
 						</span>
 					</h3>
 
-					<div className="mb-10 flex justify-between items-center">
+					<div className="mb-10 flex flex-col gap-5 md:flex-row justify-between md:items-center">
 						<div className="flex items-center gap-6">
 							<span
 								className={`text-xl cursor-pointer font-bold ${
@@ -38,7 +38,7 @@ const LeaderBoard = () => {
 							</span>
 						</div>
 
-						<div className="flex flex-row flex-shrink-0 justify-items-end space-x-1 md:space-x-4 col-span-2">
+						<div className="flex-1 flex justify-end flex-row flex-shrink-0 justify-items-end space-x-1 md:space-x-4 col-span-2">
 							<OrangeRoundedButtonMenu title={"This Week"} />
 							<div className="flex">
 								<span className="inline-flex items-center px-2 md:px-3 rounded-l-md border-2 border-r-0 h-[30px] text-gray-light text-sm">
