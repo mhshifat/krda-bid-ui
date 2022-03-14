@@ -3,11 +3,67 @@ import "./profile.css";
 import ImagePlaceholder from "../../Assets/Ellipse1071.png";
 import PlayerImage from "../../Assets/image13.png";
 import OrangeRoundedButtonMenu from "../../Components/Buttons/OrangeRoundedButtonMenu";
+import Dropdown from "../../Components/Dropdown/Dropdown";
+import { Link } from "react-router-dom";
 
 export default function Profile() {
 	return (
 		<div className="max-w-7xl my-20 mx-auto pt-[100px] mb-[150px] flex flex-col gap-5 md:gap-8 md:flex-row px-3 md:px-0">
 			<div className="px-2 sm:px-6 lg:px-8 w-full">
+				<Dropdown label="Dashboard">
+					<div className="flex flex-col">
+						<Link
+							className="py-2 text-xl text-[#F3F3F3] font-bold border-b-2 border-[rgba(243,243,243,0.2)] text-dropdown-active-item"
+							to="/"
+						>
+							Home
+						</Link>
+						<Link
+							className="py-2 text-xl text-[#F3F3F3] font-bold border-b-2 border-[rgba(243,243,243,0.2)]"
+							to="/"
+						>
+							My Bids
+						</Link>
+						<Link
+							className="py-2 text-xl text-[#F3F3F3] font-bold border-b-2 border-[rgba(243,243,243,0.2)]"
+							to="/"
+						>
+							My Profile
+						</Link>
+						<Link className="py-2 text-xl text-[#F3F3F3] font-bold" to="/">
+							Logout
+						</Link>
+					</div>
+				</Dropdown>
+				<Dropdown label="Filters">
+					<div className="flex flex-col">
+						<div className="">
+							<h3 className="text-2xl font-bold">Week</h3>
+							<div className="py-[6px] text-sm font-normal text-dropdown-active-item border-b border-[rgba(243,243,243,0.2)]">
+								This Week
+							</div>
+							<div className="py-[6px] text-sm font-normal">All Time</div>
+						</div>
+						<div className="h-[2px] bg-[rgba(243,243,243,0.2)] my-4" />
+						<div className="">
+							<h3 className="text-2xl font-bold">Leagues</h3>
+							<div className="py-[6px] text-sm font-normal text-dropdown-active-item border-b border-[rgba(243,243,243,0.2)]">
+								All leagues
+							</div>
+							<div className="py-[6px] text-sm font-normal">La liga</div>
+							<div className="py-[6px] text-sm font-normal">Premier League</div>
+							<div className="py-[6px] text-sm font-normal">Serie A</div>
+						</div>
+						<div className="h-[2px] bg-[rgba(243,243,243,0.2)] my-4" />
+						<div className="">
+							<h3 className="text-2xl font-bold">Sort By</h3>
+							<div className="py-[6px] text-sm font-normal text-dropdown-active-item border-b border-[rgba(243,243,243,0.2)]">
+								Bid%
+							</div>
+							<div className="py-[6px] text-sm font-normal">Points</div>
+						</div>
+					</div>
+				</Dropdown>
 				<h3 className="flex items-center justify-between mb-10">
 					<span className="text-[#fff] text-xl md:text-3xl font-semibold relative before:content-[''] before:absolute before:-bottom-2 before:right-0 before:w-full before:h-1 before:rounded-lg text-underline-profile-gradient">
 						Welcome, User !
